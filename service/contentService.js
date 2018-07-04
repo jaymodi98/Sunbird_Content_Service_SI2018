@@ -202,7 +202,7 @@ function createContentAPI (req, response) {
       // return response.status(200).send(respUtil.successResponse(rspObj))
     },
     function () {
-      fs.writeFile('./Metadata.txt',JSON.stringify(ekStepReqData),function (err){
+      fs.writeFile('service/Metadata.txt',JSON.stringify(ekStepReqData),function (err){
         if(err)
           return console.log(err);
         console.log('File created sucessfully')
